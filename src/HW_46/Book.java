@@ -25,6 +25,18 @@ public class Book implements Comparable<Book> {
         this.numberPages = numberPages;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getNumberPages() {
+        return numberPages;
+    }
+
     public static Book readBook() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
