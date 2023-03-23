@@ -8,16 +8,17 @@ import java.util.Collections;
 import java.util.List;
 
 public class BookMain {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
 
-        System.out.print("Enter the number of books: ");
-        int n = Integer.parseInt(br.readLine());
 
         List<Book> books = new ArrayList<>();
-        for (int i = 0; i < n; ++i) {
-            books.add(Book.readBook());
-        }
+
+        books.add(new Book("A", "B", 250));
+        books.add(new Book("At", "Bi", 50));
+        books.add(new Book("Am", "Br", 240));
+
+
+
 
         Collections.sort(books);
         for (Book book : books) {
