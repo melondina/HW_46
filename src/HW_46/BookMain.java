@@ -13,14 +13,12 @@ public class BookMain {
 
         List<Book> books = new ArrayList<>();
 
-        books.add(new Book("A", "B", 250));
-        books.add(new Book("At", "Bi", 50));
-        books.add(new Book("Am", "Br", 240));
+        books.add(new Book("A", "A", 250));
+        books.add(new Book("C", "A", 50));
+        books.add(new Book("B", "A", 240));
 
 
-
-
-        Collections.sort(books);
+        books.sort(new BookTitleComparator());
         for (Book book : books) {
             System.out.println(book);
         }
