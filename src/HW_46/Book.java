@@ -37,18 +37,6 @@ public class Book implements Comparable<Book> {
         return numberPages;
     }
 
-    public static Book readBook() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        System.out.print("Enter book`s author: ");
-        String author = br.readLine();
-        System.out.print("Enter book`s title: ");
-        String title = br.readLine();
-        System.out.print("Enter number of pages: ");
-        int numberPages = Integer.parseInt(br.readLine());
-
-        return new Book(author, title, numberPages);
-    }
 
     @Override
     public String toString() {
