@@ -18,6 +18,7 @@ public class BookMain {
         books.add(new Book("B", "A", 240));
 
 
+        System.out.println("Books sorted by Title: ");
         books.sort(new BookTitleComparator());
         for (Book book : books) {
             System.out.println(book);
